@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daybeat Portrait · Sesiones de fotos en Sabadell</title>
+  <meta name="description" content="Sesiones de retrato, pareja y familia en Sabadell. Desde 130 €.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="portrait">
+  <header class="nav">
+    <a class="logo" href="index.html"><img src="img/daybeat-photo.png" alt="Daybeat Photo, inicio"></a>
+    <nav>
+      <a href="boda.html" class="boda">Boda</a>
+      <a href="portrait.html" class="portrait" aria-current="page">Portrait</a>
+      <a href="live.html" class="live">Live</a>
+      <a href="index.html#sobre-mi" class="nav-about">Sobre mí</a>
+      <a href="#contacto" class="btn btn-small">Presupuesto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cover" style="--pos:center 30%">
+      <img class="cover-img" src="img/portrait/portrait-pareja.jpg" alt="">
+      <div class="cover-inner">
+        <img class="brand-logo" src="img/daybeat-portrait.png" alt="Daybeat Portrait">
+        <p class="brand-intro">Sesiones personales, de pareja o de retrato, en exterior, en estudio o en ese lugar que te representa. Te guío durante toda la sesión para que la cámara deje de imponer y aparezcas tal como eres.</p>
+        <a href="#tarifas" class="btn">Ver tarifas</a>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="gallery">
+        <div class="g-row">
+          <img src="img/portrait/portrait-pareja.jpg" alt="Pareja abrazada con la ciudad de fondo" loading="lazy" style="flex:1.778 1 0%;aspect-ratio:1.778">
+          <img src="img/portrait/portrait-estudio-bn.jpg" alt="Retrato de estudio en blanco y negro" loading="lazy" style="flex:0.667 1 0%;aspect-ratio:0.667">
+          <img src="img/portrait/portrait-agua.jpg" alt="Mujer con vestido blanco dentro del agua de un río" loading="lazy" style="flex:0.750 1 0%;aspect-ratio:0.750">
+        </div>
+      </div>
+    </section>
+
+    <section id="tarifas">
+      <h2>Tarifas</h2>
+      <div class="packs cols-3">
+        <article class="pack">
+          <h4>Mini sesión</h4>
+          <p class="price">130 €</p>
+          <p class="pack-desc">Un retrato rápido o una foto especial.</p>
+          <ul>
+            <li>30 minutos</li>
+            <li>1 localización</li>
+            <li>15 fotos</li>
+          </ul>
+          <a href="#contacto" class="btn btn-outline" data-servicio="Sesiones personales" data-pack="Mini sesión (130 €)">Lo quiero</a>
+        </article>
+        <article class="pack featured">
+          <p class="tag">Más elegido</p>
+          <h4>Sesión completa</h4>
+          <p class="price">190 €</p>
+          <p class="pack-desc">Tiempo para soltarse y probar ideas.</p>
+          <ul>
+            <li>1 hora</li>
+            <li>1 o 2 localizaciones</li>
+            <li>40 fotos</li>
+          </ul>
+          <a href="#contacto" class="btn" data-servicio="Sesiones personales" data-pack="Sesión completa (190 €)">Lo quiero</a>
+        </article>
+        <article class="pack">
+          <h4>Sesión extendida</h4>
+          <p class="price">300 €</p>
+          <p class="pack-desc">Para parejas, familias o proyectos.</p>
+          <ul>
+            <li>2 horas</li>
+            <li>2 localizaciones y cambio de ropa</li>
+            <li>70 fotos</li>
+          </ul>
+          <a href="#contacto" class="btn btn-outline" data-servicio="Sesiones personales" data-pack="Sesión extendida (300 €)">Lo quiero</a>
+        </article>
+      </div>
+      <p class="note">Sesión individual, en pareja o en familia. Todas las fotos se entregan revisadas y editadas, en alta resolución, sin marcas de agua y en una galería online para compartir. Desplazamiento incluido en Sabadell y alrededores.</p>
+    </section>
+
+    <section class="how">
+      <h2>Cómo trabajamos</h2>
+      <ol class="steps">
+        <li><strong>Escríbeme</strong><span>Cuéntame qué sesión quieres y para qué son las fotos.</span></li>
+        <li><strong>Preparamos la sesión</strong><span>Elegimos juntos el lugar, la luz y la ropa.</span></li>
+        <li><strong>La sesión</strong><span>Sin prisas: te guío para que te sientas natural.</span></li>
+        <li><strong>La entrega</strong><span>Recibes tu galería online con las fotos editadas.</span></li>
+      </ol>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>Pide tu presupuesto</h2>
+      <p>Cuéntame qué necesitas y te respondo con un presupuesto. Si lo prefieres, <a href="https://wa.me/34683575797" target="_blank" rel="noopener">escríbeme por WhatsApp</a>.</p>
+      <form id="lead-form" novalidate>
+        <label>Tipo de servicio
+          <select name="servicio" required>
+            <option value="">Elige una opción</option>
+            <option value="Bodas">Daybeat Boda · Bodas</option>
+            <option value="Sesiones personales" selected>Daybeat Portrait · Sesiones personales</option>
+            <option value="Conciertos">Daybeat Live · Conciertos, teatro y Carnaval</option>
+          </select>
+        </label>
+        <div class="row">
+          <label>Nombre<input name="nombre" required autocomplete="name"></label>
+          <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        </div>
+        <div class="row">
+          <label>Teléfono<input name="telefono" type="tel" autocomplete="tel"></label>
+          <label>Fecha del servicio<input name="fecha" type="date"></label>
+        </div>
+        <label>Cuéntame qué necesitas<textarea name="mensaje" rows="4"></textarea></label>
+        <details class="more">
+          <summary>Añadir más detalles (opcional)</summary>
+          <div class="more-fields">
+            <div class="row">
+              <label>Ubicación<input name="ubicacion"></label>
+              <label>Duración<input name="duracion" placeholder="p. ej. 4 horas"></label>
+            </div>
+            <div class="row">
+              <label>Personas<input name="personas" type="number" min="1"></label>
+              <label>Presupuesto aproximado<input name="presupuesto" placeholder="p. ej. 800 €"></label>
+            </div>
+            <label>Extras<input name="extras" placeholder="Álbum, vídeo, segundo fotógrafo..."></label>
+          </div>
+        </details>
+        <label class="check"><input type="checkbox" name="privacidad" required><span>He leído y acepto la <a href="privacidad.html" target="_blank">política de privacidad</a>.</span></label>
+        <input name="web" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn" type="submit">Enviar</button>
+        <p class="legal">Tus datos solo se usan para responder a tu solicitud.</p>
+        <p id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a href="index.html"><img src="img/daybeat-photo.png" alt="Daybeat Photo"></a>
+    <span><a href="https://wa.me/34683575797">683 575 797</a> · <a href="https://instagram.com/daybeatphoto">@daybeatphoto</a> · <a href="mailto:daybeatphoto@gmail.com">daybeatphoto@gmail.com</a></span>
+    <span>© <span id="year"></span> Daybeat Photo · <a href="privacidad.html">Privacidad</a></span>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/34683575797?text=Hola%20David%2C%20he%20visto%20tu%20web%20y%20me%20gustar%C3%ADa%20pedir%20informaci%C3%B3n." target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.2c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.3 1.3-4-.3-.4c-1.1-1.7-1.7-3.6-1.7-5.6C5.4 9.8 10.2 5.1 16 5.1s10.6 4.7 10.6 10.5S21.8 26.1 16 26.1zm5.8-7.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.5-1.8-1.7-2.1s0-.5.1-.6l.5-.6c.2-.2.2-.4.3-.6s0-.4 0-.6c-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.7 1.2 3.1 1.3 3.3c.2.2 2.3 3.5 5.6 4.9 2.8 1.1 3.3.9 3.9.8.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+  <script src="main.js"></script>
+</body>
+</html>
