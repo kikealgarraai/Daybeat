@@ -94,6 +94,7 @@ body.home .nav.solid { background: color-mix(in srgb, var(--bg) 92%, transparent
 .packs { display: grid; gap: 0; border-top: 2px solid var(--text); }
 .cols-4 { grid-template-columns: repeat(4, 1fr); }
 .cols-3 { grid-template-columns: repeat(3, 1fr); }
+.cols-2 { grid-template-columns: repeat(2, 1fr); }
 .pack { position: relative; padding: 32px 28px 32px 0; display: flex; flex-direction: column; gap: 10px; }
 .pack + .pack { padding-left: 28px; border-left: 1px solid var(--line); }
 .pack h4 { font-family: var(--display); font-weight: 600; font-size: 1.15rem; margin: 0; }
@@ -170,7 +171,7 @@ footer a:hover { text-decoration: underline; }
   .cover-img { position: relative; height: 46svh; }
   .cover::after { display: none; }
   .cover-inner { padding: 32px 18px 8px; }
-  .cols-4, .cols-3, .steps, .row { grid-template-columns: 1fr; }
+  .cols-4, .cols-3, .cols-2, .steps, .row { grid-template-columns: 1fr; }
   .pack, .pack + .pack, .pack.featured { padding: 28px 0; border-left: 0; }
   .pack + .pack { border-top: 1px solid var(--line); }
   .pack.featured { padding: 28px 18px; }
