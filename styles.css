@@ -73,6 +73,7 @@ body.home .nav.solid { background: color-mix(in srgb, var(--bg) 92%, transparent
 .card:hover .card-photo { transform: scale(1.03); }
 .card-logo { width: 68%; margin-top: 10px; }
 .card span { font-family: var(--display); font-weight: 600; color: var(--accent-ink); font-size: .95rem; }
+.card.boda span { color: #000; }
 
 /* Cabecera de cada servicio */
 .cover { position: relative; max-width: none !important; padding: 0 !important; min-height: 78svh; display: grid; align-items: end; overflow: hidden; }
